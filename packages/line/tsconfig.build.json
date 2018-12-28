@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.build.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": ["src"],
+  // This tells the tsc compiler: "Hey, before you build me, please build this package
+  "references": [
+    {
+      "path": "../point/tsconfig.build.json"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+// Build (not dev) tsconfig
+// For mono-repo settings see https://github.com/RyanCavanaugh/learn-a
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    // ---  Mono-repo compilerOptions ---
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+
+    // --- Build specific compilerOptions hencefort ---
+
+    "target": "es6",
+    "module": "es6",
+
+    // Important. Without this the compiler will complain it cannot find a referenced
+    // package during a build.
+    "moduleResolution": "node"
+  },
+
+  // ---  Mono-repo settings ---
+
+  // Empty files so we never build this folder by mistake
+  "files": [],
+
+  // All the packages that needs building
+  "references": [
+    {
+      "path": "line/tsconfig.build.json"
+    },
+    {
+      "path": "point/tsconfig.build.json"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+// tsconfig optional global to the project - build or dev
+{
+  "compilerOptions": {
+    "lib": ["es6"],
+    "noUnusedLocals": true
+  }
+}

@@ -1,0 +1,11 @@
+// Dev (not build) tsconfig
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@geo/point": ["point/src/index.ts"],
+      "@geo/line": ["line/src/index.ts"]
+    }
+  }
+}

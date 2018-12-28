@@ -1,0 +1,18 @@
+{
+  "name": "typescript-mono-repo-example",
+  "version": "0.0.1",
+  "description": "An example of a typecsript mono repo",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "yarn workspace @geo/line run test",
+    "build": "tsc --build packages/tsconfig.build.json"
+  },
+  "devDependencies": {
+    "tsconfig-paths": "^3.7.0",
+    "typescript": "^3.2.2"
+  }
+}

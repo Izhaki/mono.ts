@@ -1,0 +1,6 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs" // https://github.com/TypeStrong/ts-node/issues/182
+  }
+}
