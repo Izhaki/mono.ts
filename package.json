@@ -8,10 +8,11 @@
     "packages/*"
   ],
   "scripts": {
-    "test": "yarn workspace @geo/line run test",
+    "test": "lerna run test",
     "build": "tsc --build packages/tsconfig.build.json"
   },
   "devDependencies": {
+    "lerna": "^3.8.0",
     "tsconfig-paths": "^3.7.0",
     "typescript": "^3.2.2"
   }

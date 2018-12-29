@@ -25,12 +25,12 @@ VScode will take you to `/packages/point/src/index.ts`
 
 # The Stuff I'm Made Of
 
-- Typescript 3
-- Typescript's [Project References](https://www.typescriptlang.org/docs/handbook/project-references.html)
-- Yarn Workspaces
-- Mocha (with ts-node/register)
+- [Yarn Workspaces](https://yarnpkg.com/lang/en/docs/workspaces/)
+- [Lerna](https://lernajs.io/)
+- [Typescript 3 Project References](https://www.typescriptlang.org/docs/handbook/project-references.html)
+- [Mocha](https://mochajs.org/) (using ts-node/register)
 
-# How I work?
+# How do I work?
 
 There are basically two parallel typescript configuration hierarchies.
 
