@@ -6,8 +6,22 @@ My name is `mono.ts`. I'm a minimal example of a typescript mono-repo.
 
 Unlike many similar examples I can do the following, **before you build anything**:
 
-- Clicking on a package in VSCode takes you to its source.
-- Run tests
+## VSCode Package Linking
+
+So if you click on `@geo/point` (`/packages/line/src/index.ts`):
+
+```typescript
+import { Point, getDistance } from '@geo/point';
+```
+
+VScode will take you to `/packages/point/src/index.ts`
+
+## Run Tests
+
+`/packages/line/package.json`:
+
+`"test": "mocha --require ts-node/register --require tsconfig-paths/register test/*.ts"`
+
 
 # The Stuff I'm Made Of
 
@@ -15,18 +29,6 @@ Unlike many similar examples I can do the following, **before you build anything
 - Typescript's [Project References](https://www.typescriptlang.org/docs/handbook/project-references.html)
 - Yarn Workspaces
 - Mocha (with ts-node/register)
-
-# The Line Package
-
-Links to the `point` package (`/packages/line/src/index.ts`):
-
-```typescript
-import { Point, getDistance } from '@geo/point';
-```
-
-And has tests (`/packages/line/package.json`):
-
-`"test": "mocha --require ts-node/register --require tsconfig-paths/register test/*.ts"`
 
 # How I work?
 
