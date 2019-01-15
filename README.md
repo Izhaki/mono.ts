@@ -6,22 +6,21 @@ My name is `mono.ts`. I'm a minimal example of a typescript mono-repo.
 
 Unlike many similar examples I can do the following, **before you build anything**:
 
-## VSCode Package Linking
-
-So if you click on `@geo/point` (`/packages/line/src/index.ts`):
-
-```typescript
-import { Point, getDistance } from '@geo/point';
-```
-
-VScode will take you to `/packages/point/src/index.ts`
-
 ## Run Tests
 
 `/packages/line/package.json`:
 
 `"test": "mocha --require ts-node/register --require tsconfig-paths/register test/*.ts"`
 
+## VSCode Package Linking
+
+If you click on `@geo/point` (`/packages/line/src/index.ts`):
+
+```typescript
+import { Point, getDistance } from '@geo/point';
+```
+
+VScode will take you to `/packages/point/src/index.ts`
 
 # The Stuff I'm Made Of
 
