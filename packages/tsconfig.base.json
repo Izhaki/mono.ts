@@ -1,4 +1,4 @@
-// tsconfig optional global to the project - build or dev
+// tsconfig global project options - build or dev
 {
   "compilerOptions": {
     "lib": ["es6"],
